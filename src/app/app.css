@@ -1,0 +1,20 @@
+header {
+  margin-bottom: 50px;
+}
+
+.mods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+.body{
+   font-family: cursive;
+}
+
+.container h1,p {
+  color: #c8aa6e;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+

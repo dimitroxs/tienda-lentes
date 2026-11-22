@@ -1,0 +1,16 @@
+<div class="container">
+  <header>
+    <h1>Tienda de lentes</h1>
+  <p>adquiere tus productos!</p>
+  </header>
+  <div class="mods-grid">
+@for (product of Glasses; track product.name) {
+  <app-glasses-card
+    [name]="product.name"
+    [description]="product.description"
+    [image]="product.image"
+    [price]="product.price"
+  />
+}
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="mod-card">
+  <!-- img: used for images. Shows the card image (dynamic). -->
+  <img [src]="image()" [alt]="name()" />
+  <!-- h3: used for headings. Shows the card name (dynamic). -->
+  <h3>{{ name() }}</h3>
+  <!-- p: used for paragraphs. Shows the description (dynamic). -->
+  <p>{{ description() }}</p>
+  <!-- span: groups a small piece of text. Shows the card label (dynamic). -->
+  <span class="price">COP{{ price() | currency: 'COP' : 'symbol-narrow' : '1.0-0' }}</span>
+</div>
